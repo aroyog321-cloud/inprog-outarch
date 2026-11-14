@@ -1,0 +1,8 @@
+dev.missioncontrol.companion.app-pngs-0 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\generated\res\pngs\debug
+dev.missioncontrol.companion.app-resValues-1 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\generated\res\resValues\debug
+dev.missioncontrol.companion.app-updated_navigation_xml-2 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\generated\updated_navigation_xml\debug
+dev.missioncontrol.companion.app-packageDebugResources-3 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+dev.missioncontrol.companion.app-packageDebugResources-4 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+dev.missioncontrol.companion.app-debug-5 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\intermediates\merged_res\debug\mergeDebugResources
+dev.missioncontrol.companion.app-debug-6 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\debug\res
+dev.missioncontrol.companion.app-main-7 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\res

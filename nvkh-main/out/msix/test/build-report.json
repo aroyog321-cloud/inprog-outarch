@@ -1,0 +1,24 @@
+{
+  "product": "OUTARCH",
+  "mode": "test",
+  "version": "2.19.1",
+  "msixVersion": "2.19.1.0",
+  "identityName": "OUTARCH.OUTARCH",
+  "publisher": "CN=OUTARCH Local Test",
+  "architectures": [
+    "x64"
+  ],
+  "signed": false,
+  "builtAt": "2026-09-29T15:14:28.943Z",
+  "host": "Windows_NT 10.0.26200",
+  "files": [
+    {
+      "file": "out\\msix\\test\\OUTARCH_2.19.1.0_x64.msix",
+      "bytes": 147360906
+    },
+    {
+      "file": "out\\msix\\test\\OUTARCH_2.19.1.0.msixbundle",
+      "bytes": 147362639
+    }
+  ]
+}

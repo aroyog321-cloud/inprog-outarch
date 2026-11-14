@@ -1,0 +1,66 @@
+Created At: 2026-09-05T19:46:19+05:30
+Completed At: 2026-09-05T19:46:19+05:30
+File Path: `file:///d:/Downloads/Mission-Control-2.19.0-Full-App-UI-Redesign/nvkh-main/src/groundstation/renderer/tokens.css`
+Total Lines: 157
+Total Bytes: 4451
+Showing lines 100 to 157
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+100:   --slate-950: var(--mc-void);
+101:   --black: #000;
+102:   --violet-300: #b7abff;
+103:   --violet-500: var(--mc-ai-strong);
+104:   --blue-300: #8bbcff;
+105:   --blue-500: var(--mc-accent);
+106:   --amber-300: var(--mc-warning);
+107:   --amber-500: #d79a3f;
+108:   --cyan-300: #67cde0;
+109:   --cyan-500: #31a8c0;
+110:   --teal-300: #6bd3c2;
+111:   --teal-500: #39ae9c;
+112:   --rose-300: #e995aa;
+113:   --red-300: var(--mc-danger);
+114:   --orange-300: #e99a70;
+115: 
+116:   --orbital-canvas: var(--mc-void);
+117:   --orbital-sidebar: #060709;
+118:   --orbital-work: var(--mc-canvas);
+119:   --orbital-raised: var(--mc-surface);
+120:   --orbital-card: var(--mc-surface-2);
+121:   --orbital-overlay: rgba(10, 11, 14, .96);
+122:   --orbital-text: var(--mc-text);
+123:   --orbital-accent: var(--mc-accent);
+124: }
+125: 
+126: .theme-solar {
+127:   color-scheme: light;
+128:   --theme-canvas: #f4f5f2;
+129:   --theme-sidebar: #eff1ed;
+130:   --theme-work: #fafbf8;
+131:   --theme-raised: #fff;
+132:   --theme-card: #f7f8f5;
+133:   --theme-overlay: rgba(255,255,252,.97);
+134:   --theme-text-strong: #182019;
+135:   --theme-text-default: #2e382f;
+136:   --theme-text-muted: #5c685e;
+137:   --theme-text-dim: #79827a;
+138:   --theme-accent: #2f6fd0;
+139:   --theme-accent-ink: #f7fbff;
+140: }
+141: 
+142: .theme-contrast {
+143:   color-scheme: dark;
+144:   --theme-canvas: #000;
+145:   --theme-sidebar: #000;
+146:   --theme-work: #030303;
+147:   --theme-raised: #080808;
+148:   --theme-card: #0c0c0c;
+149:   --theme-overlay: rgba(0,0,0,.98);
+150:   --theme-text-strong: #fff;
+151:   --theme-text-default: #fff;
+152:   --theme-text-muted: #e0e0e0;
+153:   --theme-text-dim: #b8b8b8;
+154:   --theme-accent: #7cb8ff;
+155:   --theme-accent-ink: #000;
+156: }
+157: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

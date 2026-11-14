@@ -1,0 +1,43 @@
+Created At: 2026-09-05T20:01:12+05:30
+Completed At: 2026-09-05T20:01:13+05:30
+File Path: `file:///d:/Downloads/Mission-Control-2.19.0-Full-App-UI-Redesign/nvkh-main/test/groundstationRenderer.test.cjs`
+Total Lines: 754
+Total Bytes: 41263
+Showing lines 276 to 310
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+276:   assert.doesNotMatch(main, /import "\.\/(?:experience2[7-9]|experience30|redesign-v4|reference-v5|reference-final|prototype2026|theme-concept)\.css"/);
+277:   assert.match(tokens, /--orbital-canvas/);
+278:   assert.match(tokens, /--green-100/);
+279:   assert.match(tokens, /\.theme-solar/);
+280:   assert.match(premium, /--surface-canvas:\s*var\(--theme-canvas\)/);
+281:   assert.match(premium, /--status-needs-you:\s*var\(--accent-attention\)/);
+282:   assert.match(bridge, /--font-family-ui/);
+283:   assert.match(bridge, /--mc-text-dim:\s*#8e94a2/);
+284:   assert.match(base, /Mission Control .* base layer/);
+285:   assert.match(base, /grid-template-columns: 64px minmax\(0, 1fr\)/);
+286:   assert.match(base, /\.mission-status-bar/);
+287:   assertReducedMotionIsCentral();
+288:   assert.match(workspace, /container: workspace-stage \/ inline-size/);
+289:   assert.match(workspace, /@container workspace-stage/);
+290:   assert.match(screens, /2\.19 Groundstation contract/);
+291:   // T101 — the inspector is a sticky overlay, not a fixed drawer; `fixed` was
+292:   // never viewport-relative here (two ancestors establish a containing block).
+293:   assert.match(screens, /position: sticky;[\s\S]*width: min\(360px/);
+294: });
+295: 
+296: test("Groundstation premium shell uses one responsive sidebar with intentional primary tabs", () => {
+297:   const rendererRoot = path.join(__dirname, "..", "src", "groundstation", "renderer");
+298:   const app = fs.readFileSync(path.join(rendererRoot, "App.jsx"), "utf8");
+299:   const main = fs.readFileSync(path.join(rendererRoot, "main.jsx"), "utf8");
+300:   const base = fs.readFileSync(path.join(rendererRoot, "redesign", "base.css"), "utf8");
+301:   const workspaceCss = fs.readFileSync(path.join(rendererRoot, "redesign", "workspace.css"), "utf8");
+302:   const recipes = fs.readFileSync(path.join(rendererRoot, "RecipesView.jsx"), "utf8");
+303:   const integrations = fs.readFileSync(path.join(rendererRoot, "IntegrationsView.jsx"), "utf8");
+304: 
+305:   assert.match(app, /function AppSidebar/);
+306:   assert.match(app, /<aside className="app-sidebar"/);
+307:   assert.doesNotMatch(app, /<aside className="power-rail"/);
+308:   assert.doesNotMatch(app, /<aside className="rail"/);
+309:   assert.match(app, /\["recipes", "Recipes", "grid"\]/);
+310:   assert.match(app, /\["settings", "Settings", "settings"\]/);
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

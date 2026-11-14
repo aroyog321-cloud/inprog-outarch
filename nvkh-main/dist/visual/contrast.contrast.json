@@ -1,0 +1,364 @@
+{
+  "width": 1440,
+  "height": 900,
+  "themes": [
+    "contrast"
+  ],
+  "routes": [
+    "groundstation",
+    "workspace",
+    "needs",
+    "agents",
+    "recipes",
+    "history",
+    "settings",
+    "integrations"
+  ],
+  "sections": [
+    "contrast"
+  ],
+  "results": [
+    {
+      "theme": "contrast",
+      "route": "groundstation",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "5",
+            "ratio": 2.27,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,138,138)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Run recipe",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 12,
+            "weight": 680,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Restart",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 11.5,
+            "weight": 600,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Acknowledge",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 11.5,
+            "weight": 600,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Acknowledge",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 11.5,
+            "weight": 600,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Open terminal",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 11.5,
+            "weight": 600,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          }
+        ],
+        "unresolvable": 28
+      }
+    },
+    {
+      "theme": "contrast",
+      "route": "workspace",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.27,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,138,138)"
+          },
+          {
+            "node": "button.workspace-add-worker",
+            "text": "Add terminal worker",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 11.5,
+            "weight": 640,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          }
+        ],
+        "unresolvable": 4
+      }
+    },
+    {
+      "theme": "contrast",
+      "route": "needs",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.27,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,138,138)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Restart worker",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 13,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Approve",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 13,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Approve",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 13,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Dismiss",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 13,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Dismiss",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 13,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Dismiss",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 13,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          }
+        ],
+        "unresolvable": 1
+      }
+    },
+    {
+      "theme": "contrast",
+      "route": "agents",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.27,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,138,138)"
+          },
+          {
+            "node": "button.agent-add-more",
+            "text": "+ Add more agents",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 13,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.primary",
+            "text": "Decide",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 12,
+            "weight": 550,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          }
+        ],
+        "unresolvable": 14
+      }
+    },
+    {
+      "theme": "contrast",
+      "route": "recipes",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.27,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,138,138)"
+          },
+          {
+            "node": "button.btn-primary.feat-recipe",
+            "text": "New recipe",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 12,
+            "weight": 620,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.btn-primary.feat-recipe",
+            "text": "Launch workspace",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 12,
+            "weight": 620,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.btn-primary.feat-recipe",
+            "text": "Recover failed run",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 12,
+            "weight": 620,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          },
+          {
+            "node": "button.btn-primary.feat-recipe",
+            "text": "Launch workspace",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 12,
+            "weight": 620,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    },
+    {
+      "theme": "contrast",
+      "route": "history",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.27,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,138,138)"
+          }
+        ],
+        "unresolvable": 3
+      }
+    },
+    {
+      "theme": "contrast",
+      "route": "settings",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.27,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,138,138)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    },
+    {
+      "theme": "contrast",
+      "route": "integrations",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.27,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,138,138)"
+          },
+          {
+            "node": "button.btn-primary.feat-ai",
+            "text": "Ask Mission AI",
+            "ratio": 2.5,
+            "required": 4.5,
+            "size": 12,
+            "weight": 620,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(82,168,255)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    }
+  ]
+}

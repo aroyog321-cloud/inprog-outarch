@@ -1,0 +1,344 @@
+{
+  "width": 1440,
+  "height": 900,
+  "themes": [
+    "orbital"
+  ],
+  "routes": [
+    "groundstation",
+    "workspace",
+    "needs",
+    "agents",
+    "recipes",
+    "history",
+    "settings",
+    "integrations"
+  ],
+  "sections": [
+    "contrast"
+  ],
+  "results": [
+    {
+      "theme": "orbital",
+      "route": "groundstation",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "5",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          }
+        ],
+        "unresolvable": 28
+      }
+    },
+    {
+      "theme": "orbital",
+      "route": "workspace",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          },
+          {
+            "node": "span",
+            "text": "New folder",
+            "ratio": 4.25,
+            "required": 4.5,
+            "size": 13,
+            "weight": 400,
+            "color": "rgb(0, 112, 243)",
+            "behind": "rgb(10,14,19)"
+          }
+        ],
+        "unresolvable": 4
+      }
+    },
+    {
+      "theme": "orbital",
+      "route": "needs",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          }
+        ],
+        "unresolvable": 1
+      }
+    },
+    {
+      "theme": "orbital",
+      "route": "agents",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "small",
+            "text": "CURRENT ACTION",
+            "ratio": 3.94,
+            "required": 4.5,
+            "size": 12,
+            "weight": 720,
+            "color": "rgb(0, 112, 243)",
+            "behind": "rgb(23,23,23)"
+          },
+          {
+            "node": "button",
+            "text": "View all",
+            "ratio": 3.94,
+            "required": 4.5,
+            "size": 13,
+            "weight": 400,
+            "color": "rgb(0, 112, 243)",
+            "behind": "rgb(23,23,23)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          }
+        ],
+        "unresolvable": 14
+      }
+    },
+    {
+      "theme": "orbital",
+      "route": "recipes",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    },
+    {
+      "theme": "orbital",
+      "route": "history",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "button",
+            "text": "View all 10",
+            "ratio": 3.94,
+            "required": 4.5,
+            "size": 13,
+            "weight": 400,
+            "color": "rgb(0, 112, 243)",
+            "behind": "rgb(23,23,23)"
+          },
+          {
+            "node": "span",
+            "text": "database",
+            "ratio": 3.94,
+            "required": 4.5,
+            "size": 8,
+            "weight": 400,
+            "color": "rgb(0, 112, 243)",
+            "behind": "rgb(23,23,23)"
+          },
+          {
+            "node": "span",
+            "text": "tests",
+            "ratio": 3.94,
+            "required": 4.5,
+            "size": 8,
+            "weight": 400,
+            "color": "rgb(0, 112, 243)",
+            "behind": "rgb(23,23,23)"
+          },
+          {
+            "node": "span",
+            "text": "tests",
+            "ratio": 3.94,
+            "required": 4.5,
+            "size": 8,
+            "weight": 400,
+            "color": "rgb(0, 112, 243)",
+            "behind": "rgb(23,23,23)"
+          },
+          {
+            "node": "span",
+            "text": "tests",
+            "ratio": 3.94,
+            "required": 4.5,
+            "size": 8,
+            "weight": 400,
+            "color": "rgb(0, 112, 243)",
+            "behind": "rgb(23,23,23)"
+          },
+          {
+            "node": "span",
+            "text": "AI",
+            "ratio": 4.23,
+            "required": 4.5,
+            "size": 9,
+            "weight": 600,
+            "color": "rgb(50, 145, 255)",
+            "behind": "rgb(34,48,65)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          }
+        ],
+        "unresolvable": 3
+      }
+    },
+    {
+      "theme": "orbital",
+      "route": "settings",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    },
+    {
+      "theme": "orbital",
+      "route": "integrations",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "8",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    }
+  ]
+}

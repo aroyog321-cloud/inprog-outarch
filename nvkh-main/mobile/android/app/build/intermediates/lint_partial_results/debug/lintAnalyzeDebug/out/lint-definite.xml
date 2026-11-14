@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.13.0" type="incidents">
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="35"
+            column="181"
+            startOffset="3074"
+            endLine="35"
+            endColumn="217"
+            endOffset="3110"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="37"
+            column="58"
+            startOffset="3377"
+            endLine="37"
+            endColumn="107"
+            endOffset="3426"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="37"
+            column="153"
+            startOffset="3472"
+            endLine="37"
+            endColumn="185"
+            endOffset="3504"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="39"
+            column="40"
+            startOffset="3552"
+            endLine="39"
+            endColumn="83"
+            endOffset="3595"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="39"
+            column="315"
+            startOffset="3827"
+            endLine="39"
+            endColumn="366"
+            endOffset="3878"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="39"
+            column="402"
+            startOffset="3914"
+            endLine="39"
+            endColumn="435"
+            endOffset="3947"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="40"
+            column="56"
+            startOffset="4063"
+            endLine="40"
+            endColumn="92"
+            endOffset="4099"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="40"
+            column="56"
+            startOffset="4063"
+            endLine="40"
+            endColumn="74"
+            endOffset="4081"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="40"
+            column="391"
+            startOffset="4398"
+            endLine="40"
+            endColumn="420"
+            endOffset="4427"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="41"
+            column="493"
+            startOffset="5003"
+            endLine="41"
+            endColumn="528"
+            endOffset="5038"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/dev/missioncontrol/companion/MainActivity.java"
+            line="42"
+            column="82"
+            startOffset="5235"
+            endLine="42"
+            endColumn="108"
+            endOffset="5261"/>
+    </incident>
+
+</incidents>

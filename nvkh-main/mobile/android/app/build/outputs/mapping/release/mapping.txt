@@ -1,0 +1,202 @@
+# compiler: R8
+# compiler_version: 8.13.6
+# min_api: 33
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.2"}
+# pg_map_id: aa965768f0888996f83d3ca723366b114433925ba40d380c12fb3c54a964e021
+# pg_map_hash: SHA-256 aa965768f0888996f83d3ca723366b114433925ba40d380c12fb3c54a964e021
+dev.missioncontrol.companion.CompanionTransport -> a.a:
+# {"id":"sourceFile","fileName":"CompanionTransport.java"}
+    java.security.SecureRandom RANDOM -> a
+    1:8:void <clinit>():29:29 -> <clinit>
+    1:1:org.json.JSONObject decrypt(byte[],org.json.JSONObject,java.lang.String):74:74 -> a
+    2:2:byte[] fromBase64Url(java.lang.String):32:32 -> a
+    2:2:org.json.JSONObject decrypt(byte[],org.json.JSONObject,java.lang.String):74 -> a
+    3:3:org.json.JSONObject decrypt(byte[],org.json.JSONObject,java.lang.String):74:74 -> a
+    4:4:byte[] fromBase64Url(java.lang.String):32:32 -> a
+    4:4:org.json.JSONObject decrypt(byte[],org.json.JSONObject,java.lang.String):74 -> a
+    5:6:org.json.JSONObject decrypt(byte[],org.json.JSONObject,java.lang.String):74:75 -> a
+    7:7:byte[] fromBase64Url(java.lang.String):32:32 -> a
+    7:7:org.json.JSONObject decrypt(byte[],org.json.JSONObject,java.lang.String):75 -> a
+    8:8:org.json.JSONObject decrypt(byte[],org.json.JSONObject,java.lang.String):75:75 -> a
+    1:5:org.json.JSONObject exchange(java.lang.String,java.lang.String,org.json.JSONObject,org.json.JSONObject):80:84 -> b
+    6:6:org.json.JSONObject exchange(java.lang.String,java.lang.String,org.json.JSONObject,org.json.JSONObject):83:83 -> b
+    1:1:java.lang.String endpoint(java.lang.String):33:33 -> c
+    1:1:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):36 -> c
+    2:3:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):37:38 -> c
+    4:4:org.json.JSONObject get(java.lang.String):77:77 -> c
+    4:4:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):38 -> c
+    5:6:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):39:40 -> c
+    7:7:java.lang.String base64Url(byte[]):31:31 -> c
+    7:7:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):40 -> c
+    8:10:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):41:43 -> c
+    11:11:java.lang.String base64Url(byte[]):31:31 -> c
+    11:11:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):43 -> c
+    12:13:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):43:44 -> c
+    14:14:org.json.JSONObject post(java.lang.String,org.json.JSONObject,org.json.JSONObject):78:78 -> c
+    14:14:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):44 -> c
+    15:15:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):45:45 -> c
+    16:16:byte[] fromBase64Url(java.lang.String):32:32 -> c
+    16:16:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):45 -> c
+    17:19:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):45:47 -> c
+    20:20:byte[] fromBase64Url(java.lang.String):32:32 -> c
+    20:20:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):47 -> c
+    21:21:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):47:47 -> c
+    22:23:byte[] hkdf(byte[],byte[],byte[],int):65:66 -> c
+    22:23:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):47 -> c
+    24:25:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):48:49 -> c
+    26:26:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):37:37 -> c
+    27:27:java.lang.String endpoint(java.lang.String):33:33 -> c
+    27:27:org.json.JSONObject pair(java.lang.String,java.lang.String,java.lang.String):36 -> c
+    1:1:org.json.JSONObject request(org.json.JSONObject,java.lang.String):53:53 -> d
+    2:2:java.lang.String endpoint(java.lang.String):33:33 -> d
+    2:2:org.json.JSONObject request(org.json.JSONObject,java.lang.String):53 -> d
+    3:3:org.json.JSONObject request(org.json.JSONObject,java.lang.String):53:53 -> d
+    4:4:byte[] fromBase64Url(java.lang.String):32:32 -> d
+    4:4:org.json.JSONObject request(org.json.JSONObject,java.lang.String):53 -> d
+    5:7:org.json.JSONObject request(org.json.JSONObject,java.lang.String):54:56 -> d
+    8:10:org.json.JSONObject encrypt(byte[],org.json.JSONObject,java.lang.String):69:71 -> d
+    8:10:org.json.JSONObject request(org.json.JSONObject,java.lang.String):56 -> d
+    11:11:java.lang.String base64Url(byte[]):31:31 -> d
+    11:11:org.json.JSONObject encrypt(byte[],org.json.JSONObject,java.lang.String):71 -> d
+    11:11:org.json.JSONObject request(org.json.JSONObject,java.lang.String):56 -> d
+    12:12:org.json.JSONObject encrypt(byte[],org.json.JSONObject,java.lang.String):71:71 -> d
+    12:12:org.json.JSONObject request(org.json.JSONObject,java.lang.String):56 -> d
+    13:13:java.lang.String base64Url(byte[]):31:31 -> d
+    13:13:org.json.JSONObject encrypt(byte[],org.json.JSONObject,java.lang.String):71 -> d
+    13:13:org.json.JSONObject request(org.json.JSONObject,java.lang.String):56 -> d
+    14:14:org.json.JSONObject encrypt(byte[],org.json.JSONObject,java.lang.String):71:71 -> d
+    14:14:org.json.JSONObject request(org.json.JSONObject,java.lang.String):56 -> d
+    15:15:java.lang.String base64Url(byte[]):31:31 -> d
+    15:15:org.json.JSONObject encrypt(byte[],org.json.JSONObject,java.lang.String):71 -> d
+    15:15:org.json.JSONObject request(org.json.JSONObject,java.lang.String):56 -> d
+    16:16:org.json.JSONObject encrypt(byte[],org.json.JSONObject,java.lang.String):71:71 -> d
+    16:16:org.json.JSONObject request(org.json.JSONObject,java.lang.String):56 -> d
+    17:18:org.json.JSONObject request(org.json.JSONObject,java.lang.String):57:58 -> d
+    19:19:org.json.JSONObject post(java.lang.String,org.json.JSONObject,org.json.JSONObject):78:78 -> d
+    19:19:org.json.JSONObject request(org.json.JSONObject,java.lang.String):58 -> d
+    20:22:org.json.JSONObject request(org.json.JSONObject,java.lang.String):59:61 -> d
+    23:23:org.json.JSONObject request(org.json.JSONObject,java.lang.String):60:60 -> d
+    24:24:java.lang.String endpoint(java.lang.String):33:33 -> d
+    24:24:org.json.JSONObject request(org.json.JSONObject,java.lang.String):53 -> d
+dev.missioncontrol.companion.MainActivity -> dev.missioncontrol.companion.MainActivity:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    java.util.concurrent.ExecutorService work -> a
+    dev.missioncontrol.companion.SecureCredentialStore credentials -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/g;"}
+    android.widget.TextView status -> c
+    android.widget.TextView output -> d
+    android.widget.EditText endpoint -> e
+    android.widget.EditText code -> f
+    android.widget.EditText name -> g
+    int $r8$clinit -> h
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:3:void <init>():19:19 -> <init>
+    4:10:void <init>():20:20 -> <init>
+    1:12:android.widget.Button button(java.lang.String,android.view.View$OnClickListener):27:27 -> a
+    1:25:android.widget.EditText input(java.lang.String):26:26 -> b
+    1:1:void read(java.lang.String):40:40 -> c
+    1:25:android.widget.TextView text(java.lang.String,int):25:25 -> d
+    1:1:void onCreate(android.os.Bundle):22:22 -> onCreate
+    2:10:void render():29:37 -> onCreate
+    2:10:void onCreate(android.os.Bundle):22 -> onCreate
+    1:9:void onDestroy():23:23 -> onDestroy
+dev.missioncontrol.companion.MainActivity$$ExternalSyntheticLambda0 -> a.b:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int a.MainActivity$$ExternalSyntheticLambda0.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    dev.missioncontrol.companion.MainActivity dev.missioncontrol.companion.MainActivity$$InternalSyntheticLambda$1$9904f60df99e5394529561c42798b27978b6020e5b3aba4531d508f0253110d9$0.f$0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:void a.MainActivity$$ExternalSyntheticLambda0.<init>(dev.missioncontrol.companion.MainActivity,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void dev.missioncontrol.companion.MainActivity.lambda$render$5(android.view.View):35:35 -> onClick
+    1:1:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+      # {"id":"com.android.tools.r8.synthesized"}
+    2:2:void dev.missioncontrol.companion.SecureCredentialStore.clear():39:39 -> onClick
+    2:2:void dev.missioncontrol.companion.MainActivity.lambda$render$5(android.view.View):35 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    2:2:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+    3:3:void dev.missioncontrol.companion.SecureCredentialStore.clear():39:39 -> onClick
+    3:3:void dev.missioncontrol.companion.MainActivity.lambda$render$5(android.view.View):35 -> onClick
+    3:3:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+    4:4:void dev.missioncontrol.companion.MainActivity.lambda$render$5(android.view.View):35:35 -> onClick
+    4:4:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+    5:5:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0:0 -> onClick
+    6:6:void dev.missioncontrol.companion.MainActivity.biometric():41:41 -> onClick
+    6:6:void dev.missioncontrol.companion.MainActivity.lambda$render$4(android.view.View):35 -> onClick
+    6:6:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+    7:7:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0:0 -> onClick
+    8:8:void dev.missioncontrol.companion.MainActivity.lambda$render$3(android.view.View):34:34 -> onClick
+    8:8:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+    9:9:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0:0 -> onClick
+    10:10:void dev.missioncontrol.companion.MainActivity.lambda$render$2(android.view.View):34:34 -> onClick
+    10:10:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+    11:11:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0:0 -> onClick
+    12:12:void dev.missioncontrol.companion.MainActivity.lambda$render$1(android.view.View):34:34 -> onClick
+    12:12:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+    13:13:void dev.missioncontrol.companion.MainActivity.pair():39:39 -> onClick
+    13:13:void dev.missioncontrol.companion.MainActivity.lambda$render$0(android.view.View):33 -> onClick
+    13:13:void a.MainActivity$$ExternalSyntheticLambda0.onClick(android.view.View):0 -> onClick
+dev.missioncontrol.companion.MainActivity$$ExternalSyntheticLambda10 -> a.c:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int a.MainActivity$$ExternalSyntheticLambda10.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    dev.missioncontrol.companion.MainActivity dev.missioncontrol.companion.MainActivity$$InternalSyntheticLambda$3$9d28873255c3d7cfcbaa07cf8adc5dd034312753b2b6b959a60e91356a83d381$0.f$0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:void a.MainActivity$$ExternalSyntheticLambda10.<init>(dev.missioncontrol.companion.MainActivity,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void dev.missioncontrol.companion.MainActivity.lambda$pair$7():39:39 -> run
+    2:2:void dev.missioncontrol.companion.MainActivity.showError(java.lang.Exception):42:42 -> run
+    2:2:void dev.missioncontrol.companion.MainActivity.lambda$pair$7():39 -> run
+    3:3:void dev.missioncontrol.companion.MainActivity.lambda$pair$6():39:39 -> run
+dev.missioncontrol.companion.MainActivity$$ExternalSyntheticLambda6 -> a.d:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int a.MainActivity$$ExternalSyntheticLambda6.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    dev.missioncontrol.companion.MainActivity dev.missioncontrol.companion.MainActivity$$InternalSyntheticLambda$2$592a5d6ac2732fc6768ea36ea8c13625ebdcf084e7fc96caf48721c0ce225e74$0.f$0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.lang.String dev.missioncontrol.companion.MainActivity$$InternalSyntheticLambda$2$592a5d6ac2732fc6768ea36ea8c13625ebdcf084e7fc96caf48721c0ce225e74$0.f$1 -> c
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/io/Serializable;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void a.MainActivity$$ExternalSyntheticLambda6.<init>(dev.missioncontrol.companion.MainActivity,java.io.Serializable,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void dev.missioncontrol.companion.MainActivity.lambda$showError$11(java.lang.Exception):42:42 -> run
+    1:1:void a.MainActivity$$ExternalSyntheticLambda6.run():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    2:2:void a.MainActivity$$ExternalSyntheticLambda6.run():0:0 -> run
+    3:3:void dev.missioncontrol.companion.MainActivity.lambda$read$8(java.lang.String):40:40 -> run
+    3:3:void a.MainActivity$$ExternalSyntheticLambda6.run():0 -> run
+    4:4:void a.MainActivity$$ExternalSyntheticLambda6.run():0:0 -> run
+    5:5:void dev.missioncontrol.companion.MainActivity.lambda$read$9(java.lang.String):40:40 -> run
+    5:5:void a.MainActivity$$ExternalSyntheticLambda6.run():0 -> run
+    6:6:void dev.missioncontrol.companion.MainActivity.showError(java.lang.Exception):42:42 -> run
+    6:6:void dev.missioncontrol.companion.MainActivity.lambda$read$9(java.lang.String):40 -> run
+    6:6:void a.MainActivity$$ExternalSyntheticLambda6.run():0 -> run
+dev.missioncontrol.companion.MainActivity$$ExternalSyntheticLambda8 -> a.e:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:3:void a.MainActivity$$ExternalSyntheticLambda8.onClick(android.content.DialogInterface,int):0:0 -> onClick
+      # {"id":"com.android.tools.r8.synthesized"}
+dev.missioncontrol.companion.MainActivity$1 -> a.f:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    dev.missioncontrol.companion.MainActivity this$0 -> a
+    1:6:void <init>(dev.missioncontrol.companion.MainActivity):41:41 -> <init>
+    1:2:void onAuthenticationError(int,java.lang.CharSequence):41:41 -> onAuthenticationError
+    3:4:android.widget.TextView dev.missioncontrol.companion.MainActivity.access$000(dev.missioncontrol.companion.MainActivity):19:19 -> onAuthenticationError
+    3:4:void onAuthenticationError(int,java.lang.CharSequence):41 -> onAuthenticationError
+    5:8:void onAuthenticationError(int,java.lang.CharSequence):41:41 -> onAuthenticationError
+    1:2:void onAuthenticationSucceeded(android.hardware.biometrics.BiometricPrompt$AuthenticationResult):41:41 -> onAuthenticationSucceeded
+    3:4:android.widget.TextView dev.missioncontrol.companion.MainActivity.access$000(dev.missioncontrol.companion.MainActivity):19:19 -> onAuthenticationSucceeded
+    3:4:void onAuthenticationSucceeded(android.hardware.biometrics.BiometricPrompt$AuthenticationResult):41 -> onAuthenticationSucceeded
+    5:10:void onAuthenticationSucceeded(android.hardware.biometrics.BiometricPrompt$AuthenticationResult):41:41 -> onAuthenticationSucceeded
+dev.missioncontrol.companion.SecureCredentialStore -> a.g:
+# {"id":"sourceFile","fileName":"SecureCredentialStore.java"}
+    android.content.SharedPreferences preferences -> a
+    1:13:void <init>(android.content.Context):19:19 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ldev/missioncontrol/companion/MainActivity;)V"}
+    1:5:javax.crypto.SecretKey key():22:26 -> a
+    1:3:java.lang.String load():35:37 -> b
+    1:3:void save(java.lang.String):30:32 -> c

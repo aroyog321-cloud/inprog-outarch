@@ -1,0 +1,19 @@
+dev.missioncontrol.companion.CompanionTransport:
+    static final int API_VERSION
+    static final java.lang.String INVITE
+    static final java.lang.String PAIR
+    static final java.lang.String REQUEST
+    void <init>()
+dev.missioncontrol.companion.R$mipmap
+dev.missioncontrol.companion.R$style
+dev.missioncontrol.companion.R$xml
+dev.missioncontrol.companion.R
+dev.missioncontrol.companion.SecureCredentialStore:
+    private static final java.lang.String ALIAS
+    private static final java.lang.String PREFS
+dev.missioncontrol.companion.CompanionTransport:
+    public static java.lang.String endpoint(java.lang.String)
+dev.missioncontrol.companion.MainActivity:
+    public final void showError(java.lang.Exception)
+dev.missioncontrol.companion.SecureCredentialStore:
+    public static void clear()

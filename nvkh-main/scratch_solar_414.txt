@@ -1,0 +1,49 @@
+Created At: 2026-09-05T20:06:25+05:30
+Completed At: 2026-09-05T20:06:25+05:30
+File Path: `file:///d:/Downloads/Mission-Control-2.19.0-Full-App-UI-Redesign/nvkh-main/test/cockpitDensity.test.cjs`
+Total Lines: 208
+Total Bytes: 12041
+Showing lines 40 to 80
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+40:   assert.match(app, /id: "workspace-recipes", label: "Open workspace recipes"/);
+41:   assert.match(app, /<RecipesView/);
+42: });
+43: 
+44: test("the consolidated surfaces layer loads after cockpit and preserves the shared reading grammar", () => {
+45:   const main = read("main.jsx");
+46:   const cockpit = read("redesign", "cockpit.css");
+47:   const surfaces = read("redesign", "surfaces.css");
+48: 
+49:   // Order matters: this layer only works because it resolves after the
+50:   // historical stylesheets it corrects.
+51:   assert.match(main, /import "\.\/redesign\/screens\.css";[\s\S]*import "\.\/redesign\/cockpit\.css";[\s\S]*import "\.\/redesign\/surfaces\.css";/);
+52:   assert.equal(
+53:     main.trimEnd().split("\n").filter(line => line.startsWith("import ")).pop(),
+54:     'import "./redesign/surfaces.css";',
+55:     "surfaces.css must remain the final shared-component stylesheet import"
+56:   );
+57:   assert.match(surfaces, /--mc-type-caption: \.75rem/);
+58: 
+59:   // One page-header row instead of a per-route hero slab.
+60:   assert.match(cockpit, /\.pm-page-hero, \.page-command-header, \.settings-hero/);
+61:   assert.match(cockpit, /font-size: 15px !important;/);
+62:   // Statistics read as a register, not a billboard.
+63:   assert.match(cockpit, /\.agent-overview, \.integration-score, \.history-snapshot/);
+64: });
+65: 
+66: test("themes resolve because the legacy token layers are re-sited onto .shell", () => {
+67:   const cockpit = read("redesign", "cockpit.css");
+68: 
+69:   // The bug this guards: aliases declared in a `:root` block substitute their
+70:   // var() at :root, so they froze against the dark palette and never followed
+71:   // `.theme-solar` / `.theme-contrast`, which are declared on `.shell`.
+72:   assert.match(cockpit, /15 · Theme correctness/);
+73:   for (const alias of ["--void: var(--mc-void);", "--base: var(--mc-canvas);", "--text: var(--mc-text);"]) {
+74:     assert.ok(cockpit.includes(alias), `${alias} must be re-declared on .shell`);
+75:   }
+76:   // premiumDesign.css ships a second token layer rooted in --orbital-*.
+77:   for (const alias of ["--theme-text-strong: var(--orbital-text);", "--text-strong: var(--theme-text-strong);"]) {
+78:     assert.ok(cockpit.includes(alias), `${alias} must be re-declared on .shell`);
+79:   }
+80:   // Its four hardcoded colours must follow the palette rather than a literal.
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

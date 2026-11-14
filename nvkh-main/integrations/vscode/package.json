@@ -1,0 +1,54 @@
+{
+  "name": "bridge",
+  "displayName": "OUTARCH Bridge",
+  "description": "Connect VS Code to the OUTARCH desktop app: share the active file, diagnostics, Git state and terminal activity, and let OUTARCH manage the terminals it creates.",
+  "version": "1.0.0",
+  "publisher": "mission-control",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "icon": "media/outarch.png",
+  "galleryBanner": {
+    "color": "#050608",
+    "theme": "dark"
+  },
+  "keywords": [
+    "outarch",
+    "terminals",
+    "ai agents",
+    "developer tools",
+    "local"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false,
+      "description": "OUTARCH Bridge can open files and manage terminals for OUTARCH, so it runs only in trusted workspaces."
+    },
+    "virtualWorkspaces": false
+  },
+  "main": "./extension.cjs",
+  "activationEvents": [
+    "onUri",
+    "onCommand:missionControlBridge.connect",
+    "onCommand:missionControlBridge.disconnect"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "missionControlBridge.connect",
+        "title": "OUTARCH: Connect Current Project"
+      },
+      {
+        "command": "missionControlBridge.disconnect",
+        "title": "OUTARCH: Disconnect Bridge"
+      }
+    ]
+  }
+}

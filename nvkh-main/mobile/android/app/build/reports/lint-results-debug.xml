@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.13.0">
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="    root.addView(button(&quot;Verify identity for a sensitive approval&quot;, view -> biometric())); root.addView(button(&quot;Forget this desktop&quot;, view -> { credentials.clear(); status.setText(&quot;Credential removed from this phone&quot;); output.setText(&quot;&quot;); }));"
+        errorLine2="                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="35"
+            column="181"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="    try { if (credentials.load() != null) status.setText(&quot;Paired credential protected by Android Keystore&quot;); } catch (Exception error) { status.setText(&quot;Secure credential needs repair&quot;); }"
+        errorLine2="                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="37"
+            column="58"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="    try { if (credentials.load() != null) status.setText(&quot;Paired credential protected by Android Keystore&quot;); } catch (Exception error) { status.setText(&quot;Secure credential needs repair&quot;); }"
+        errorLine2="                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="37"
+            column="153"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  private void pair() { status.setText(&quot;Proving pairing code and exchanging keys…&quot;); work.execute(() -> { try { JSONObject value = CompanionTransport.pair(endpoint.getText().toString(), code.getText().toString(), name.getText().toString()); credentials.save(value.toString()); runOnUiThread(() -> { status.setText(&quot;Paired · credential protected by Android Keystore&quot;); code.setText(&quot;&quot;); output.setText(&quot;Encrypted supervision is ready.&quot;); }); } catch (Exception error) { showError(error); } }); }"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="39"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  private void pair() { status.setText(&quot;Proving pairing code and exchanging keys…&quot;); work.execute(() -> { try { JSONObject value = CompanionTransport.pair(endpoint.getText().toString(), code.getText().toString(), name.getText().toString()); credentials.save(value.toString()); runOnUiThread(() -> { status.setText(&quot;Paired · credential protected by Android Keystore&quot;); code.setText(&quot;&quot;); output.setText(&quot;Encrypted supervision is ready.&quot;); }); } catch (Exception error) { showError(error); } }); }"
+        errorLine2="                                                                                                                                                                                                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="39"
+            column="315"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  private void pair() { status.setText(&quot;Proving pairing code and exchanging keys…&quot;); work.execute(() -> { try { JSONObject value = CompanionTransport.pair(endpoint.getText().toString(), code.getText().toString(), name.getText().toString()); credentials.save(value.toString()); runOnUiThread(() -> { status.setText(&quot;Paired · credential protected by Android Keystore&quot;); code.setText(&quot;&quot;); output.setText(&quot;Encrypted supervision is ready.&quot;); }); } catch (Exception error) { showError(error); } }); }"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="39"
+            column="402"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  private void read(String operation) { status.setText(&quot;Reading bounded &quot; + operation + &quot;…&quot;); work.execute(() -> { try { String stored = credentials.load(); if (stored == null) throw new IllegalStateException(&quot;Pair this phone first&quot;); JSONObject result = CompanionTransport.request(new JSONObject(stored), operation); String shown = result.toString(2); runOnUiThread(() -> { status.setText(&quot;Encrypted response verified&quot;); output.setText(shown); }); } catch (Exception error) { showError(error); } }); }"
+        errorLine2="                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="40"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  private void read(String operation) { status.setText(&quot;Reading bounded &quot; + operation + &quot;…&quot;); work.execute(() -> { try { String stored = credentials.load(); if (stored == null) throw new IllegalStateException(&quot;Pair this phone first&quot;); JSONObject result = CompanionTransport.request(new JSONObject(stored), operation); String shown = result.toString(2); runOnUiThread(() -> { status.setText(&quot;Encrypted response verified&quot;); output.setText(shown); }); } catch (Exception error) { showError(error); } }); }"
+        errorLine2="                                                       ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="40"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  private void read(String operation) { status.setText(&quot;Reading bounded &quot; + operation + &quot;…&quot;); work.execute(() -> { try { String stored = credentials.load(); if (stored == null) throw new IllegalStateException(&quot;Pair this phone first&quot;); JSONObject result = CompanionTransport.request(new JSONObject(stored), operation); String shown = result.toString(2); runOnUiThread(() -> { status.setText(&quot;Encrypted response verified&quot;); output.setText(shown); }); } catch (Exception error) { showError(error); } }); }"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="40"
+            column="391"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  private void biometric() { BiometricPrompt prompt = new BiometricPrompt.Builder(this).setTitle(&quot;OUTARCH approval&quot;).setSubtitle(&quot;Confirm your identity before reviewing a sensitive request&quot;).setNegativeButton(&quot;Cancel&quot;, getMainExecutor(), (dialog, which) -> {}).build(); prompt.authenticate(new CancellationSignal(), getMainExecutor(), new BiometricPrompt.AuthenticationCallback() { @Override public void onAuthenticationSucceeded(BiometricPrompt.AuthenticationResult result) { status.setText(&quot;Identity verified for this review&quot;); } @Override public void onAuthenticationError(int code, CharSequence message) { status.setText(message); } }); }"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="41"
+            column="493"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  private void showError(Exception error) { runOnUiThread(() -> { status.setText(&quot;Request did not complete&quot;); output.setText(error.getMessage()); }); }"
+        errorLine2="                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\java\dev\missioncontrol\companion\MainActivity.java"
+            line="42"
+            column="82"/>
+    </issue>
+
+</issues>

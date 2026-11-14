@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "project": {
+    "name": "renderer"
+  },
+  "sessions": [
+    {
+      "id": "shell",
+      "name": "Shell",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo"
+      ],
+      "cwd": ".",
+      "powershellCompatibility": true
+    }
+  ],
+  "commands": []
+}

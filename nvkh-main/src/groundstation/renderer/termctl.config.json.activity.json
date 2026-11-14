@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "contractVersion": 1,
+  "latestSequence": 12,
+  "droppedThroughSequence": 0,
+  "events": [
+    {
+      "operation": "project.open",
+      "contractVersion": 1,
+      "sequence": 12,
+      "timestamp": 1789471603757,
+      "type": "confirmation:completed"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "theme": "orbital",
+  "root": "",
+  "workspace": {
+    ".workspace-experience": {
+      "background": "rgb(6, 7, 8)",
+      "backgroundImage": null,
+      "color": "rgb(203, 208, 220)",
+      "rect": [
+        222,
+        52,
+        1038,
+        754
+      ]
+    },
+    ".workspace-stage": {
+      "background": "rgb(6, 7, 8)",
+      "backgroundImage": "radial-gradient(circle at 72% -30%, rgba(169, 224, 182, 0.06",
+      "color": "rgb(203, 208, 220)",
+      "rect": [
+        222,
+        52,
+        1038,
+        754
+      ]
+    },
+    ".worker-folders": {
+      "background": "rgb(20, 22, 26)",
+      "backgroundImage": null,
+      "color": "rgb(203, 208, 220)",
+      "rect": [
+        230,
+        206,
+        1022,
+        46
+      ]
+    },
+    ".worker-folder-list": {
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": null,
+      "color": "rgb(203, 208, 220)",
+      "rect": [
+        230,
+        206,
+        1022,
+        46
+      ]
+    },
+    ".worker-folder-list > button": {
+      "background": "rgb(27, 30, 35)",
+      "backgroundImage": null,
+      "color": "rgb(243, 245, 248)",
+      "rect": [
+        231,
+        208,
+        138,
+        32
+      ]
+    },
+    ".terminal-grid": {
+      "background": "rgb(10, 11, 13)",
+      "backgroundImage": null,
+      "color": "rgb(203, 208, 220)",
+      "rect": [
+        230,
+        267,
+        1022,
+        531
+      ]
+    },
+    ".view-workspace": {
+      "background": "rgb(6, 7, 8)",
+      "backgroundImage": null,
+      "color": "rgb(243, 245, 248)",
+      "rect": [
+        212,
+        42,
+        1068,
+        774
+      ]
+    }
+  },
+  "agents": {
+    ".agent-detail-tabs": {
+      "background": "rgb(20, 22, 26)",
+      "backgroundImage": null,
+      "color": "rgb(203, 208, 220)",
+      "rect": [
+        545,
+        269,
+        692,
+        44
+      ]
+    },
+    ".agent-current-action": {
+      "background": "rgb(20, 22, 26)",
+      "backgroundImage": null,
+      "color": "rgb(203, 208, 220)",
+      "rect": [
+        561,
+        496,
+        650,
+        96
+      ]
+    },
+    ".agents-view": "ABSENT"
+  }
+}

@@ -1,0 +1,69 @@
+Created At: 2026-09-05T20:18:08+05:30
+Completed At: 2026-09-05T20:18:08+05:30
+File Path: `file:///d:/Downloads/Mission-Control-2.19.0-Full-App-UI-Redesign/nvkh-main/test/accessibilityMeasured.test.cjs`
+Total Lines: 166
+Total Bytes: 9288
+Showing lines 1 to 150
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: "use strict";
+2: 
+3: // Phase 6 - the measured accessibility tasks (T136, T137, T140).
+4: //
+5: // All three were measured with `scripts/visual/probe-metrics.cjs` against the
+6: // BUILT renderer, offscreen, over 8 routes:
+7: //
+8: //   T137  contrast, 3 themes: 131 distinct failures -> 0. Orbital and
+9: //         High-contrast went 15 -> 0 each; Solar Light 101 -> 0.
+10: //   T136  announcement order: every route now has exactly one h1 and no
+11: //         skipped heading level. Workspace previously announced a single
+12: //         alert and no structure at all.
+13: //   T140  keyboard reach at 800x680, the production minimum: 0 unreachable
+14: //         controls on every route, and History no longer overflows a
+15: //         container that cannot be scrolled to reach it.
+16: //
+17: // These tests lock the CAUSES so the numbers cannot quietly come back.
+18: 
+19: const assert = require("node:assert/strict");
+20: const { test } = require("node:test");
+21: const fs = require("node:fs");
+22: const path = require("node:path");
+23: 
+24: const rendererRoot = path.join(__dirname, "..", "src", "groundstation", "renderer");
+25: const read = (...parts) => fs.readFileSync(path.join(rendererRoot, ...parts), "utf8");
+26: 
+27: test("T137 - no live rule paints a status role with a hand-written palette entry", () => {
+28:   // These six literals WERE the dark theme, written out by hand. Each is a role
+29:   // that a theme has to be able to move; none of them followed one.
+30:   const banned = ["#77e1b3", "#9bcaff", "#7faedc", "
+<truncated 5507 bytes>
+folder rail is a
+122:   // navigation region, not an anonymous div.
+123:   assert.match(app, /<nav className="worker-folders" aria-label="Worker folders">/);
+124: 
+125:   // Agents had two h1 elements: the page and the selected agent.
+126:   const agents = read("AgentWorkspace.jsx");
+127:   assert.match(agents, /<h1>Supervised agents<\/h1>/);
+128:   assert.match(agents, /<h2>\{agentName\(selected\)\}<\/h2>/);
+129:   assert.equal((agents.match(/<h1>/g) || []).length, 1);
+130:   // The rules that styled it follow the tag change.
+131:   assert.match(read("redesign", "cockpit.css"), /\.agent-detail-title :is\(h1, h2\)/);
+132:   assert.match(read("uiFoundation.css"), /\.agent-detail-title :is\(h1, h2\)/);
+133: 
+134:   // Settings jumped h1 -> h3; the active group is the missing level and also
+135:   // tells a reader which of the eight they are in.
+136:   assert.match(app, /<h2 className="sr-only">\{SETTINGS_GROUPS\.find\(\(\[id\]\) => id === group\)\?\.\[1\] \|\| "Settings"\}<\/h2>/);
+137: });
+138: 
+139: test("T140 - History wraps at the production floor instead of running off the side", () => {
+140:   const screens = read("redesign", "screens.css");
+141:   const block = screens.slice(screens.indexOf("History at the production floor (T140)"));
+142:   assert.ok(block.length > 0, "the fix must record what was measured");
+143:   assert.match(block, /scrollWidth 831 in a 542px track/);
+144:   assert.match(block, /\.history-controls \{[\s\S]{0,120}flex-wrap: wrap;/);
+145:   assert.match(block, /\.history-actors \{ flex-wrap: wrap;/);
+146:   assert.match(block, /\.history-export \{ flex: 1 0 100%; \}/);
+147:   // The two-column splits collapse rather than forcing the page wider.
+148:   assert.match(block, /@media \(max-width: 900px\)/);
+149:   assert.match(block, /\.memory-briefing \{ grid-template-columns: minmax\(0, 1fr\); \}/);
+150: });
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

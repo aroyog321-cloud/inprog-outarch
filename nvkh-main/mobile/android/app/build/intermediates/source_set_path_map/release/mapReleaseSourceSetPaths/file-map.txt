@@ -1,0 +1,8 @@
+dev.missioncontrol.companion.app-pngs-0 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\generated\res\pngs\release
+dev.missioncontrol.companion.app-resValues-1 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\generated\res\resValues\release
+dev.missioncontrol.companion.app-updated_navigation_xml-2 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\generated\updated_navigation_xml\release
+dev.missioncontrol.companion.app-packageReleaseResources-3 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+dev.missioncontrol.companion.app-packageReleaseResources-4 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+dev.missioncontrol.companion.app-release-5 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\build\intermediates\merged_res\release\mergeReleaseResources
+dev.missioncontrol.companion.app-main-6 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\res
+dev.missioncontrol.companion.app-release-7 D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\release\res

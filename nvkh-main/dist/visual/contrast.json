@@ -1,0 +1,44 @@
+{
+  "width": 1440,
+  "height": 900,
+  "themes": [
+    "orbital"
+  ],
+  "routes": [
+    "groundstation"
+  ],
+  "sections": [
+    "contrast"
+  ],
+  "results": [
+    {
+      "theme": "orbital",
+      "route": "groundstation",
+      "contrast": {
+        "findings": [
+          {
+            "node": "b",
+            "text": "5",
+            "ratio": 2.98,
+            "required": 4.5,
+            "size": 9,
+            "weight": 700,
+            "color": "rgb(255, 255, 255)",
+            "behind": "rgb(255,95,95)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 4.24,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(0,112,243)"
+          }
+        ],
+        "unresolvable": 28
+      }
+    }
+  ]
+}

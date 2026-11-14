@@ -1,0 +1,13 @@
+{
+  "name": "termctl-tui",
+  "productName": "OUTARCH",
+  "version": "2.19.1",
+  "description": "OUTARCH — a local-first developer command center with a shared PTY engine, TUI, and desktop client.",
+  "type": "module",
+  "main": "src/groundstation/main/index.cjs",
+  "outarchDistribution": "microsoft-store",
+  "license": "SEE LICENSE IN THIRD_PARTY_LICENSES.md",
+  "dependencies": {
+    "node-pty": "1.1.0"
+  }
+}

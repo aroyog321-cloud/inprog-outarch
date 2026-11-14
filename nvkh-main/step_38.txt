@@ -1,0 +1,128 @@
+Created At: 2026-09-05T19:46:25+05:30
+Completed At: 2026-09-05T19:46:25+05:30
+File Path: `file:///d:/Downloads/Mission-Control-2.19.0-Full-App-UI-Redesign/nvkh-main/src/groundstation/renderer/redesign/tokens-bridge.css`
+Total Lines: 297
+Total Bytes: 11648
+Showing lines 101 to 220
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+101:   --mc-focus-ring: 0 0 0 2px var(--mc-void), 0 0 0 4px var(--mc-accent-line);
+102:   --mc-glow-primary: 0 0 24px rgba(79, 157, 255, 0.28);
+103: 
+104:   /* ---- premium surface detail -------------------------------------------
+105: 
+106:      Depth on a near-black canvas cannot come from shadow alone: an unlit
+107:      panel reads as a hole. Every raised surface pairs a cast shadow with a
+108:      1px top light-edge, the way a physical panel catches the light above
+109:      it. `--mc-hairline` is the internal separator — deliberately weaker
+110:      than `--mc-border`, which stays the outer edge of a surface. */
+111:   --mc-font-mono: "JetBrains Mono Variable", "Cascadia Code", "SFMono-Regular", Consolas, ui-monospace, monospace;
+112:   --mc-font-ui: var(--font-family-ui);
+113:   --mc-text-xs: 11px;
+114:   --mc-text-sm: 12px;
+115:   --mc-text-base: 13px;
+116:   --mc-text-lg: 15px;
+117:   --mc-text-xl: 18px;
+118:   --mc-hairline: rgba(233, 238, 247, .055);
+119:   --mc-edge: inset 0 1px 0 rgba(255, 255, 255, .045);
+120:   --mc-edge-strong: inset 0 1px 0 rgba(255, 255, 255, .07);
+121:   --mc-raise-1: 0 1px 1px rgba(0, 0, 0, .34), 0 2px 6px -2px rgba(0, 0, 0, .4), var(--mc-edge);
+122:   --mc-raise-2: 0 2px 4px -1px rgba(0, 0, 0, .38), 0 10px 26px -10px rgba(0, 0, 0, .55), var(--mc-edge);
+123:   --mc-ring-accent: 0 0 0 1px var(--mc-accent-line), 0 0 22px -8px var(--mc-accent);
+124: 
+125:   /* ---- motion (T148) -----------------------------------------------------
+126:      Duration and easing are separate primitives so a component can borrow one
+127:      without inheriting the other, and so the zero-motion variant has a single
+128:      place to act: setting the three durations to 0 stills every transition
+129:      composed from them, without any component knowing that happened. The
+130:      composed `--mc-motion-*` shorthands stay because most call sites want the
+131:      pair, and they now resolve through the primitives. */
+132:   --mc-duration-fast: 120ms;
+133:   --mc-duration-base: 190ms;
+134:   --mc-duration-enter: 260ms;
+135:   --mc-ease-standard: ease-out;
+136:   --mc-ease-enter: cubic-bezier(.16, 1, .3, 1);
+137: 
+138:   --mc-motion-fast: var(--mc-duration-fast) var(--mc-ease-standard);
+139:   --mc-motion-base: var(--mc-duration-base) var(--mc-ease-standard);
+140:   --mc-motion-enter: var(--mc-duration-enter) var(--mc-ease-enter);
+141: 
+142:   /* =====================================================================
+143:      Legacy aliases — every historical name now resolves here.
+144:      ===================================================================== */
+145: 
+146:   /* styles.css */
+147:   --void: var(--mc-void);
+148:   --base: var(--mc-canvas);
+149:   --surface: var(--mc-surface);
+150:   --surface-2: var(--mc-surface-2);
+151:   --surface-3: var(--mc-surface-3);
+152:   --line: var(--mc-border);
+153:   --line-strong: var(--mc-border-strong);
+154:   --text: var(--mc-text);
+155:   --muted: var(--mc-text-muted);
+156:   --dim: var(--mc-text-dim);
+157:   --accent: var(--mc-accent);
+158:   --accent-strong: var(--mc-accent-strong);
+159:   --accent-ink: var(--mc-text-ink);
+160:   --amber: var(--mc-warning);
+161:   --red: var(--mc-danger);
+162:   --blue: var(--mc-accent);
+163:   --shadow-menu: var(--mc-shadow-2);
+164:   --shadow-dialog: var(--mc-shadow-float);
+165:   --shadow-focus: 0 0 0 2px var(--mc-accent-soft);
+166:   --shadow-card: var(--mc-shadow-1);
+167:   --spring: cubic-bezier(.16, 1, .3, 1);
+168:   --radius: var(--mc-radius-md);
+169:   --radius-lg: var(--mc-radius-lg);
+170:   --radius-xl: var(--mc-radius-lg);
+171: 
+172:   /* tokens.css compatibility chain */
+173:   --mc-accent-ink: var(--mc-text-ink);
+174:   --mc-accent-soft: rgba(79, 157, 255, .13);
+175:   --green-300: var(--mc-ok);
+176:   --green-400: var(--mc-ok);
+177:   --green-500: #34b87d;
+178:   --blue-300: var(--mc-accent-strong);
+179:   --blue-500: var(--mc-accent);
+180:   --violet-300: var(--mc-ai-strong);
+181:   --violet-500: var(--mc-ai);
+182:   --amber-300: var(--mc-warning);
+183:   --slate-50: var(--mc-text);
+184:   --slate-200: var(--mc-text-soft);
+185:   --slate-400: var(--mc-text-muted);
+186:   --slate-500: var(--mc-text-dim);
+187:   --slate-800: var(--mc-surface-3);
+188:   --slate-850: var(--mc-surface-2);
+189:   --slate-900: var(--mc-surface);
+190:   --slate-950: var(--mc-void);
+191:   --orbital-canvas: var(--mc-void);
+192:   --orbital-sidebar: var(--mc-void);
+193:   --orbital-work: var(--mc-canvas);
+194:   --orbital-raised: var(--mc-surface);
+195:   --orbital-card: var(--mc-surface-2);
+196:   --orbital-accent: var(--mc-accent);
+197:   --orbital-text: var(--mc-text);
+198: 
+199:   /* uiFoundation.css */
+200:   --surface-raised: var(--mc-surface-2);
+201:   --surface-hover: var(--mc-surface-3);
+202:   --surface-selected: var(--mc-accent-soft);
+203:   --shadow-low: 0 1px 0 rgba(255, 255, 255, .02) inset, 0 10px 28px -20px rgba(0, 0, 0, .6);
+204:   --shadow-float: var(--mc-shadow-float);
+205: 
+206:   /* premiumDesign.css / experience* semantic status names */
+207:   --surface-canvas: var(--mc-canvas);
+208:   --accent-primary: var(--mc-accent);
+209:   --accent-primary-glow: var(--mc-accent-soft);
+210:   --accent-ai: var(--mc-ai);
+211:   --accent-warning: var(--mc-warning);
+212:   --accent-attention: var(--mc-warning);
+213:   --accent-vscode: var(--mc-accent);
+214:   --accent-recipe: var(--mc-ai);
+215:   --status-needs-you: var(--mc-warning);
+216:   --border-subtle: var(--mc-border);
+217:   --border-default: var(--mc-border);
+218:   --text-dim-semantic: var(--mc-text-dim);
+219:   --text-muted-semantic: var(--mc-text-muted);
+220:   --radius-control-semantic: var(--mc-radius-sm);
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

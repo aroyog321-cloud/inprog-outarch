@@ -1,0 +1,10 @@
+nvkh-main/node_modules/electron/dist/electron.exe filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/.work/store/bundle/OUTARCH_2.19.1.0_x64.msix filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/.work/store/electron-x64/OUTARCH-win32-x64/OUTARCH.exe filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/.work/test/bundle/OUTARCH_2.19.1.0_x64.msix filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/.work/test/electron-x64/OUTARCH-win32-x64/OUTARCH.exe filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/installed-test/x64/OUTARCH.exe filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/store/OUTARCH_2.19.1.0.msixbundle filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/store/OUTARCH_2.19.1.0_x64.msix filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/test/OUTARCH_2.19.1.0.msixbundle filter=lfs diff=lfs merge=lfs -text
+nvkh-main/out/msix/test/OUTARCH_2.19.1.0_x64.msix filter=lfs diff=lfs merge=lfs -text

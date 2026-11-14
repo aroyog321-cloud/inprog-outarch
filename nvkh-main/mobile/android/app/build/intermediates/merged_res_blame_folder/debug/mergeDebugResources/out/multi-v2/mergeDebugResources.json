@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "dev.missioncontrol.companion.app-debug-4:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Downloads\\Mission-Control-2.19.0-Full-App-UI-Redesign\\nvkh-main\\mobile\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "2",
+                        "startOffsets": "14",
+                        "endLines": "3",
+                        "endColumns": "10",
+                        "endOffsets": "351"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "10",
+                        "endOffsets": "392"
+                    }
+                }
+            ]
+        }
+    ]
+}

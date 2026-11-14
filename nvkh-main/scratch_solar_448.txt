@@ -1,0 +1,123 @@
+Created At: 2026-09-05T20:09:06+05:30
+Completed At: 2026-09-05T20:09:11+05:30
+
+				The command exited with code 0.
+				Output:
+				<truncated 19 lines>
++
++   This file loads last and repoints every legacy alias at ONE semantic
++   system: deep graphite surfaces, a single blue operational accent, and
++   green reserved strictly for healthy/success — exactly the direction the
++   Experience Audit called for. Changing values here (not scattered literals)
++   is the whole point: one edit, one coherent palette.
++   ======================================================================== */
++
++:root {
++  color-scheme: dark;
++
++  --font-family-ui: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
++  --font-family-display: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
++
++  /* ---- canonical graphite scale ------------------------------------------ */
++  --mc-void: #060708;
++  --mc-canvas: #0a0b0d;
++  --mc-surface: #0e1013;
++  --mc-surface-2: #14161a;
++  --mc-surface-3: #1b1e23;
++  --mc-surface-4: #23272e;
++  --mc-border: #23262d;
++  --mc-border-strong: #333844;
++  --mc-border-faint: rgba(233, 238, 247, .06);
++
++  --mc-text: #f3f5f8;
++  --mc-text-soft: #c4c8d2;
++  --mc-text-muted: #868b98;
++  --mc-text-dim: #747b88;
++  --mc-text-ink: #04101f;
++
++  /* ---- one operational accent + semantic roles -------------------------- */
++  --mc-accent: #4f9dff;
++  --mc-accent-strong: #74b2ff;
++  --mc-accent-soft: rgba(79, 157, 255, .14);
++  --mc-accent-line: rgba(79, 157, 255, .42);
++
++  --mc-ai: #8f7bff;
++  --mc-ai-strong: #a394ff;
++  --mc-ai-soft: rgba(143, 123, 255, .15);
++
++  --mc-ok: #3ecf8e;
++  --mc-ok-soft: rgba(62, 207, 142, .13);
++  --mc-warning: #eaa544;
++  --mc-warning-soft: rgba(234, 165, 68, .13);
++  --mc-danger: #ff5b66;
++  --mc-danger-soft: rgba(255, 91, 102, .14);
++  --mc-info: var(--mc-accent);
++
++  /* ---- spacing / radius / motion / elevation -------------------------- */
++  --mc-space-1: 4px;  --mc-space-2: 8px;  --mc-space-3: 12px;
++  --mc-space-4: 16px; --mc-space-5: 20px; --mc-spac
+<truncated 4198 bytes>
+);
++  --accent-attention: var(--mc-warning);
++  --accent-vscode: var(--mc-accent);
++  --accent-recipe: var(--mc-ai);
++  --status-needs-you: var(--mc-warning);
++  --border-subtle: var(--mc-border);
++  --border-default: var(--mc-border);
++  --text-dim-semantic: var(--mc-text-dim);
++  --text-muted-semantic: var(--mc-text-muted);
++  --radius-control-semantic: var(--mc-radius-sm);
++}
++
++/* Light + high-contrast themes keep working; they only need the accent and
++   success roles kept distinct. */
++.theme-solar {
++  color-scheme: light;
++  --mc-void: #e7e8eb;
++  --mc-canvas: #f3f4f6;
++  --mc-surface: #ffffff;
++  --mc-surface-2: #eceef2;
++  --mc-surface-3: #e1e4e9;
++  --mc-surface-4: #d2d6dd;
++  --mc-border: #c8ccd4;
++  --mc-border-strong: #aeb4bf;
++  --mc-border-faint: rgba(18, 23, 32, .08);
++  --mc-text: #11151c;
++  --mc-text-soft: #303743;
++  --mc-text-muted: #525b69;
++  --mc-text-dim: #626c7a;
++  --mc-text-ink: #ffffff;
++  --mc-accent: #2f6fd0;
++  --mc-accent-strong: #235bad;
++  --mc-accent-soft: rgba(47, 111, 208, .12);
++  --mc-accent-line: rgba(47, 111, 208, .38);
++  --mc-ai: #6552c7;
++  --mc-ai-strong: #513dac;
++  --mc-ai-soft: rgba(101, 82, 199, .12);
++  --mc-ok: #1f8b57;
++  --mc-ok-soft: rgba(31, 139, 87, .11);
++  --mc-warning: #9a6208;
++  --mc-warning-soft: rgba(154, 98, 8, .11);
++  --mc-danger: #bd303b;
++  --mc-danger-soft: rgba(189, 48, 59, .11);
++  --mc-hairline: rgba(18, 23, 32, .07);
++  --mc-edge: inset 0 1px 0 rgba(255, 255, 255, .8);
++  --mc-edge-strong: inset 0 1px 0 rgba(255, 255, 255, .95);
++  --mc-shadow-1: 0 1px 2px rgba(18, 23, 32, .1);
++  --mc-shadow-2: 0 12px 32px -16px rgba(18, 23, 32, .28);
++  --mc-shadow-float: 0 24px 64px -28px rgba(18, 23, 32, .34);
++  --mc-focus-ring: 0 0 0 2px var(--mc-surface), 0 0 0 4px var(--mc-accent-line);
++  --accent: #2f6fd0;
++  --blue: #2f6fd0;
++}
++.theme-contrast {
++  --mc-accent: #7cb8ff;
++  --mc-border: #4a4a4a;
++  --mc-border-strong: #6a6a6a;
++  --accent: #7cb8ff;
++  --line: #4a4a4a;
++  --line-strong: #6a6a6a;
++}
++
++html, body { background: var(--mc-void); }
+

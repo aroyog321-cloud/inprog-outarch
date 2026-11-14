@@ -1,0 +1,7 @@
+[mcp_servers.dodopayments]
+command = "npx"
+args = [
+    "-y",
+    "mcp-remote@latest",
+    "https://mcp.dodopayments.com/mcp",
+]

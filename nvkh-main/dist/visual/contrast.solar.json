@@ -1,0 +1,324 @@
+{
+  "width": 1440,
+  "height": 900,
+  "themes": [
+    "solar"
+  ],
+  "routes": [
+    "groundstation",
+    "workspace",
+    "needs",
+    "agents",
+    "recipes",
+    "history",
+    "settings",
+    "integrations"
+  ],
+  "sections": [
+    "contrast"
+  ],
+  "results": [
+    {
+      "theme": "solar",
+      "route": "groundstation",
+      "contrast": {
+        "findings": [
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 3.26,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(33,97,194)"
+          },
+          {
+            "node": "span.status-bar-premium__indicator.is-connected",
+            "text": "Degraded",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 10.5,
+            "weight": 650,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          }
+        ],
+        "unresolvable": 28
+      }
+    },
+    {
+      "theme": "solar",
+      "route": "workspace",
+      "contrast": {
+        "findings": [
+          {
+            "node": "div.terminal-warning",
+            "text": "Terminal stream did not return an identifier",
+            "ratio": 1.44,
+            "required": 4.5,
+            "size": 8,
+            "weight": 400,
+            "color": "rgb(245, 185, 66)",
+            "behind": "rgb(231,232,235)"
+          },
+          {
+            "node": "div.terminal-warning",
+            "text": "Terminal stream did not return an identifier",
+            "ratio": 1.44,
+            "required": 4.5,
+            "size": 8,
+            "weight": 400,
+            "color": "rgb(245, 185, 66)",
+            "behind": "rgb(231,232,235)"
+          },
+          {
+            "node": "div.terminal-warning",
+            "text": "Terminal stream did not return an identifier",
+            "ratio": 1.44,
+            "required": 4.5,
+            "size": 8,
+            "weight": 400,
+            "color": "rgb(245, 185, 66)",
+            "behind": "rgb(231,232,235)"
+          },
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 3.26,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(33,97,194)"
+          },
+          {
+            "node": "span",
+            "text": "New folder",
+            "ratio": 3.27,
+            "required": 4.5,
+            "size": 13,
+            "weight": 400,
+            "color": "rgb(33, 97, 194)",
+            "behind": "rgb(10,14,19)"
+          },
+          {
+            "node": "span.status-bar-premium__indicator.is-connected",
+            "text": "Degraded",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 10.5,
+            "weight": 650,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          },
+          {
+            "node": "span",
+            "text": "Tests: 1 failed, 84 passed, 85 total",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 11,
+            "weight": 400,
+            "color": "rgb(140, 84, 0)",
+            "behind": "rgb(221,216,209)"
+          },
+          {
+            "node": "span",
+            "text": "Process exited with code 1",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 11,
+            "weight": 400,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          }
+        ],
+        "unresolvable": 4
+      }
+    },
+    {
+      "theme": "solar",
+      "route": "needs",
+      "contrast": {
+        "findings": [
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 3.26,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(33,97,194)"
+          },
+          {
+            "node": "span.status-bar-premium__indicator.is-connected",
+            "text": "Degraded",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 10.5,
+            "weight": 650,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          }
+        ],
+        "unresolvable": 1
+      }
+    },
+    {
+      "theme": "solar",
+      "route": "agents",
+      "contrast": {
+        "findings": [
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 3.26,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(33,97,194)"
+          },
+          {
+            "node": "span.status-bar-premium__indicator.is-connected",
+            "text": "Degraded",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 10.5,
+            "weight": 650,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          }
+        ],
+        "unresolvable": 14
+      }
+    },
+    {
+      "theme": "solar",
+      "route": "recipes",
+      "contrast": {
+        "findings": [
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 3.26,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(33,97,194)"
+          },
+          {
+            "node": "span.status-bar-premium__indicator.is-connected",
+            "text": "Degraded",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 10.5,
+            "weight": 650,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    },
+    {
+      "theme": "solar",
+      "route": "history",
+      "contrast": {
+        "findings": [
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 3.26,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(33,97,194)"
+          },
+          {
+            "node": "span",
+            "text": "AI",
+            "ratio": 3.94,
+            "required": 4.5,
+            "size": 9,
+            "weight": 600,
+            "color": "rgb(101, 82, 199)",
+            "behind": "rgb(210,210,229)"
+          },
+          {
+            "node": "span.status-bar-premium__indicator.is-connected",
+            "text": "Degraded",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 10.5,
+            "weight": 650,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          }
+        ],
+        "unresolvable": 3
+      }
+    },
+    {
+      "theme": "solar",
+      "route": "settings",
+      "contrast": {
+        "findings": [
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 3.26,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(33,97,194)"
+          },
+          {
+            "node": "span.status-bar-premium__indicator.is-connected",
+            "text": "Degraded",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 10.5,
+            "weight": 650,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    },
+    {
+      "theme": "solar",
+      "route": "integrations",
+      "contrast": {
+        "findings": [
+          {
+            "node": "a.skip-link",
+            "text": "Skip to workspace content",
+            "ratio": 3.26,
+            "required": 4.5,
+            "size": 11,
+            "weight": 700,
+            "color": "rgb(7, 16, 12)",
+            "behind": "rgb(33,97,194)"
+          },
+          {
+            "node": "span.status-bar-premium__indicator.is-connected",
+            "text": "Degraded",
+            "ratio": 4.37,
+            "required": 4.5,
+            "size": 10.5,
+            "weight": 650,
+            "color": "rgb(181, 40, 51)",
+            "behind": "rgb(226,211,215)"
+          }
+        ],
+        "unresolvable": 0
+      }
+    }
+  ]
+}

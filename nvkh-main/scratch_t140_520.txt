@@ -1,0 +1,65 @@
+Created At: 2026-09-05T20:14:36+05:30
+Completed At: 2026-09-05T20:14:37+05:30
+File Path: `file:///d:/Downloads/Mission-Control-2.19.0-Full-App-UI-Redesign/nvkh-main/test/accessibilityMeasured.test.cjs`
+Total Lines: 166
+Total Bytes: 9288
+Showing lines 60 to 166
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+60:   assert.match(solar, /--mc-ok: #026733;/);
+61:   assert.match(solar, /--mc-warning: #8c5400;/);
+62:   assert.match(solar, /--mc-danger: #b52833;/);
+63:   assert.match(solar, /--mc-accent: #2161c2;/);
+64:   assert.match(solar, /measured values, not chosen ones/);
+65: });
+66: 
+67: test("T137 - the frozen accent primitives follow the theme", () => {
+68:   const cockpit = read("redesign", "cockpit.css");
+69:   // `--red: var(--accent-danger)` made this the winning alias block, and
+70:   // `--accent-danger` pointed at a fixed dark primitive - so History's "why it
+71:   // needs review" heading stayed dark-theme red on a white card at 2.63:1.
+72:   assert.match(cockpit, /--accent-warning: var\(--mc-warning\);/);
+73:   assert.match(cockpit, /--accent-danger: var\(--mc-danger\);/);
+74:   assert.match(cockpit, /--accent-attention: var\(--mc-warning\);/);
+75:   assert.doesNotMatch(cockpit, /--accent-danger: var\(--red-300\);/);
+76: });
+77: 
+78: test("T137 - the terminal surface has its own status ink", () => {
+79:   const workspace = read("redesign", "workspace.css");
+80:   // The pane stays dark whatever the page theme is, so the page's status inks
+81:   // are wrong over it: Solar's warning is a dark brown and it landed on a
+82:   // near-black pane at 2.32:1.
+83:   assert.match(workspace, /--mc-term-ok:/);
+84:   assert.match(workspace, /--mc-term-warning:/);
+85:   assert.match(workspace, /--mc-term-danger:/);
+86:   assert.match(workspace, /\.terminal-pane__activity\.is-attention \{ color: var\(--mc-term-warning\)/);
+87: 
+<truncated 3342 bytes>
+de", () => {
+140:   const screens = read("redesign", "screens.css");
+141:   const block = screens.slice(screens.indexOf("History at the production floor (T140)"));
+142:   assert.ok(block.length > 0, "the fix must record what was measured");
+143:   assert.match(block, /scrollWidth 831 in a 542px track/);
+144:   assert.match(block, /\.history-controls \{[\s\S]{0,120}flex-wrap: wrap;/);
+145:   assert.match(block, /\.history-actors \{ flex-wrap: wrap;/);
+146:   assert.match(block, /\.history-export \{ flex: 1 0 100%; \}/);
+147:   // The two-column splits collapse rather than forcing the page wider.
+148:   assert.match(block, /@media \(max-width: 900px\)/);
+149:   assert.match(block, /\.memory-briefing \{ grid-template-columns: minmax\(0, 1fr\); \}/);
+150: });
+151: 
+152: test("T140 - the measurement harness reports what a screenshot cannot", () => {
+153:   const probe = fs.readFileSync(path.join(__dirname, "..", "scripts", "visual", "probes", "metrics.js"), "utf8");
+154:   for (const section of ["fold:", "scrollNesting:", "contrast:", "focusOrder:", "announceOrder:", "horizontal:", "scale:"]) {
+155:     assert.ok(probe.includes(section), `the probe lost its ${section} section`);
+156:   }
+157:   // Three honesty rules the probe needs or it reports ghosts: a gradient
+158:   // backdrop cannot be resolved, xterm's mirror layer is invisible by design,
+159:   // and a roving-tabindex member IS keyboard reachable.
+160:   assert.match(probe, /if \(style\.backgroundImage && style\.backgroundImage !== "none"\) return null;/);
+161:   assert.match(probe, /function inTerminalCanvas\(node\)/);
+162:   assert.match(probe, /var roving = function \(el\) \{ return Boolean\(el\.closest\(ROVING\)\); \};/);
+163:   // And it must not be filtered by paint when the question is announcement.
+164:   assert.match(probe, /Announced, not painted/);
+165: });
+166: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

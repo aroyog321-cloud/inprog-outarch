@@ -1,0 +1,155 @@
+Created At: 2026-09-05T19:46:38+05:30
+Completed At: 2026-09-05T19:46:38+05:30
+File Path: `file:///d:/Downloads/Mission-Control-2.19.0-Full-App-UI-Redesign/nvkh-main/src/groundstation/renderer/WorkerDialog.jsx`
+Total Lines: 247
+Total Bytes: 15116
+Showing lines 101 to 247
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+101:     };
+102:     const onFocusIn = event => {
+103:       if (dialogRef.current && !dialogRef.current.contains(event.target)) {
+104:         (focusablesIn(dialogRef.current)[0] || dialogRef.current).focus({ preventScroll: true });
+105:       }
+106:     };
+107:     requestAnimationFrame(() => (focusablesIn(dialogRef.current)[0] || dialogRef.current)?.focus({ preventScroll: true }));
+108:     window.addEventListener("keydown", onKeyDown);
+109:     document.addEventListener("focusin", onFocusIn);
+110:     return () => {
+111:       window.removeEventListener("keydown", onKeyDown);
+112:       document.removeEventListener("focusin", onFocusIn);
+113:       const target = previousFocus && document.contains(previousFocus) ? previousFocus : document.getElementById("main-content");
+114:       target?.focus?.({ preventScroll: true });
+115:     };
+116:   }, []);
+117: 
+118:   const update = (field, value) => { setTemplateId("custom"); setDraft(current => ({ ...current, [field]: value })); };
+119:   const applyTemplate = template => {
+120:     setTemplateId(template.id);
+121:     setDraft(current => ({ ...current, id: nextAvailableWorkerId(template.id === "shell" ? "terminal" : template.id, existingIds), name: template.name, command: template.command, argsText: JSON.stringify(template.args, null, 2), cwd: ".", autoStart: template.autoStart, powershellCompatibility: false }));
+122:     setError("");
+123:   };
+124: 
+125:   const submit = async event => {
+126:     event.preventDefault();
+127:     setError("");
+128:     try {
+129:       const value = editing ? buildWorkerPatch(draft) : buildWorkerDefinition(draft);
+130:       setBusy(true);
+131:       await onSave(value);
+132:       onClose();
+133:     } catch (submitError) {
+134:       setError(submitError instanceof Error ? submitError.message : String(submitError));
+135:     } finally {
+136:       setBusy(false);
+137:     }
+138:   };
+139: 
+140:   const instantiate = async commandId => {
+141:     setError("");
+142:     try {
+143:       setBusy(true);
+144:       await onInstantiate(commandId);
+145:       onClose();
+146:     } catch (instantiateError) {
+147:       setError(instantiateError instanceof Error ? instantiateError.message : String(instantiateError));
+148:     } finally {
+149:       setBusy(false);
+150:     }
+151:   };
+152: 
+153:   return (
+154:     <div className="palette-backdrop" role="presentation" onMouseDown={event => {
+155:       if (event.target === event.currentTarget && !busy) onClose();
+156:     }}>
+157:       <section ref={dialogRef} tabIndex={-1} className="worker-dialog command-palette pm-dialog" role="dialog" aria-modal="true" aria-labelledby={titleId}>
+158:         <header className="dialog-header">
+159:           <div>
+160:             <span className="eyebrow">TERMINAL WORKSPACE</span>
+161:             <h2 id={titleId}>{editing ? `Edit ${configuration.name}` : "Add a terminal worker"}</h2>
+162:           </div>
+163:           <div className="worker-dialog-header-actions">{!editing && <button type="button" className="worker-dialog-ai" onClick={() => onAskAI?.(WORKER_DIALOG_AI_PROMPT)} disabled={busy}><span>AI</span> Ask about this form</button>}<button type="button" className="dialog-close" onClick={onClose} disabled={busy} aria-label="Close dialog">×</button></div>
+164:         </header>
+165: 
+166:         {!editing && (
+167:           <TabSet
+168:             group="worker-source"
+169:             className="dialog-tabs"
+170:             label="Worker source"
+171:             value={mode}
+172:             onChange={setMode}
+173:             tabs={[
+174:               { value: "create", label: "New terminal worker" },
+175:               { value: "presets", label: "Saved presets", badge: savedCommands.length }
+176:             ]}
+177:           />
+178:         )}
+179: 
+180:         {!editing && mode === "create" && <section className="worker-dialog-guide" aria-label="How adding a worker works"><div><b>1</b><span><strong>Choose a purpose</strong><small>Start from a template or enter your own command.</small></span></div><div><b>2</b><span><strong>Review the definition</strong><small>Name, command and folder stay visible before creation.</small></span></div><div><b>3</b><span><strong>Add one worker</strong><small>Mission Control registers one engine-owned terminal; auto-start is your choice.</small></span></div></section>}
+181: 
+182:         {error && <div className="dialog-error" role="alert">{error}</div>}
+183: 
+184:         {mode === "presets" && !editing ? (
+185:           <div className="dialog-body preset-body" {...tabPanelProps("worker-source", "presets")}>
+186:             <PresetList commands={savedCommands} busy={busy} onInstantiate={instantiate} />
+187:           </div>
+188:         ) : (
+189:           <form onSubmit={submit} {...(editing ? {} : tabPanelProps("worker-source", "create"))}>
+190:             <div className="dialog-body worker-form">
+191:               {!editing && <section className="worker-template-section"><header><div><span className="section-kicker">QUICK START</span><strong>Choose what this terminal should do</strong></div><small>Templates only fill the form. Review every command before adding it.</small></header><div className="worker-template-grid">{WORKER_TEMPLATES.map(template => <button type="button" className={`pm-card pm-card--interactive worker-template-card ${templateId === template.id ? "pm-card--selected is-selected" : ""}`} key={template.id} onClick={() => applyTemplate(template)}><span className="worker-template-card__badge">{template.badge}</span><span><strong>{template.name}</strong><small>{template.detail}</small></span><code>{template.command}</code></button>)}</div></section>}
+192:               <div className="worker-form-heading"><div><span>WORKER DEFINITION</span><strong>{editing ? "Update the supervised command" : `${WORKER_TEMPLATES.find(item => item.id === templateId)?.name || "Custom worker"} configuration`}</strong></div><span>{draft.autoStart ? "Starts immediately" : "Creates idle"} · project-relative</span></div>
+193:               <Field label="Worker ID" detail="Stable identifier; it cannot be changed later.">
+194:                 <input value={draft.id} disabled={editing || busy} onChange={event => update("id", event.target.value)} placeholder="backend" autoFocus={!editing} />
+195:               </Field>
+196:               <Field label="Display name">
+197:                 <input value={draft.name} disabled={busy} onChange={event => update("name", event.target.value)} placeholder="Backend server" autoFocus={editing} />
+198:               </Field>
+199:               <Field label="Command" detail="Defaults to an empty PowerShell terminal. Replace it with any executable you want Mission Control to supervise." wide>
+200:                 <input value={draft.command} disabled={busy} onChange={event => update("command", event.target.value)} placeholder="powershell.exe" />
+201:               </Field>
+202:               <Field label="Arguments" detail='JSON array, for example ["run", "dev"].' wide>
+203:                 <textarea rows="3" value={draft.argsText} disabled={busy} onChange={event => update("argsText", event.target.value)} spellCheck="false" />
+204:               </Field>
+205:               <Field label="Working directory" detail='Use "." for the open project folder, or a relative subfolder such as ./frontend.' wide>
+206:                 <input value={draft.cwd} disabled={busy} onChange={event => update("cwd", event.target.value)} placeholder="." />
+207:               </Field>
+208: 
+209:               {editing && (
+210:                 <label className="terminal-toggle-card is-wide">
+211:                   <span><strong>Replace environment overrides</strong><small>Existing values remain secret and unchanged unless you enable this.</small></span>
+212:                   <span className="pm-toggle"><input type="checkbox" checked={draft.replaceEnvironment} disabled={busy} onChange={event => update("replaceEnvironment", event.target.checked)} /><i className="pm-toggle-track"><b className="pm-toggle-thumb"/></i></span>
+213:                 </label>
+214:               )}
+215:               <Field
+216:                 label="Environment"
+217:                 detail={editing && !draft.replaceEnvironment
+218:                   ? `Existing keys: ${configuration.envKeys?.join(", ") || "none"}`
+219:                   : "JSON object of string values. Values are never exposed in Groundstation state or activity."}
+220:                 wide
+221:               >
+222:                 <textarea rows="4" value={draft.envText} disabled={busy || (editing && !draft.replaceEnvironment)} onChange={event => update("envText", event.target.value)} spellCheck="false" />
+223:               </Field>
+224: 
+225:               <label className="terminal-toggle-card">
+226:                 <span><strong>Start automatically</strong><small>Launch now and during future workspace restores.</small></span>
+227:                 <span className="pm-toggle"><input type="checkbox" checked={draft.autoStart} disabled={busy} onChange={event => update("autoStart", event.target.checked)} /><i className="pm-toggle-track"><b className="pm-toggle-thumb"/></i></span>
+228:               </label>
+229:               <label className="terminal-toggle-card">
+230:                 <span><strong>PowerShell compatibility</strong><small>Explicit fallback that disables PSReadLine for this worker.</small></span>
+231:                 <span className="pm-toggle"><input type="checkbox" checked={draft.powershellCompatibility} disabled={busy} onChange={event => update("powershellCompatibility", event.target.checked)} /><i className="pm-toggle-track"><b className="pm-toggle-thumb"/></i></span>
+232:               </label>
+233:             </div>
+234:             <footer className="dialog-footer">
+235:               <span>{editing ? "The worker stays idle until you start it." : draft.autoStart ? "This creates and starts one engine-owned PTY." : "This registers an idle worker without launching a process."}</span>
+236:               <div>
+237:                 <button type="button" className="btn-ghost" onClick={onClose} disabled={busy}>Cancel</button>
+238:                 <button type="submit" className="btn-primary" disabled={busy}>{busy ? "Saving…" : editing ? "Save changes" : "Add worker"}</button>
+239:               </div>
+240:             </footer>
+241:           </form>
+242:         )}
+243:       </section>
+244:     </div>
+245:   );
+246: }
+247: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

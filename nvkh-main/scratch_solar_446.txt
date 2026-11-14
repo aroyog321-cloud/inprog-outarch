@@ -1,0 +1,68 @@
+Created At: 2026-09-05T20:09:02+05:30
+Completed At: 2026-09-05T20:09:02+05:30
+File Path: `file:///d:/Downloads/Mission-Control-2.19.0-Full-App-UI-Redesign/nvkh-main/test/accessibilityMeasured.test.cjs`
+Total Lines: 166
+Total Bytes: 9288
+Showing lines 1 to 60
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: "use strict";
+2: 
+3: // Phase 6 - the measured accessibility tasks (T136, T137, T140).
+4: //
+5: // All three were measured with `scripts/visual/probe-metrics.cjs` against the
+6: // BUILT renderer, offscreen, over 8 routes:
+7: //
+8: //   T137  contrast, 3 themes: 131 distinct failures -> 0. Orbital and
+9: //         High-contrast went 15 -> 0 each; Solar Light 101 -> 0.
+10: //   T136  announcement order: every route now has exactly one h1 and no
+11: //         skipped heading level. Workspace previously announced a single
+12: //         alert and no structure at all.
+13: //   T140  keyboard reach at 800x680, the production minimum: 0 unreachable
+14: //         controls on every route, and History no longer overflows a
+15: //         container that cannot be scrolled to reach it.
+16: //
+17: // These tests lock the CAUSES so the numbers cannot quietly come back.
+18: 
+19: const assert = require("node:assert/strict");
+20: const { test } = require("node:test");
+21: const fs = require("node:fs");
+22: const path = require("node:path");
+23: 
+24: const rendererRoot = path.join(__dirname, "..", "src", "groundstation", "renderer");
+25: const read = (...parts) => fs.readFileSync(path.join(rendererRoot, ...parts), "utf8");
+26: 
+27: test("T137 - no live rule paints a status role with a hand-written palette entry", () => {
+28:   // These six literals WERE the dark theme, written out by hand. Each is a role
+29:   // that a theme has to be able to move; none of them followed one.
+30:   const banned = ["#77e1b3", "#9bcaff", "#7faedc", "#efaaa4", "#ef9189", "#8795a9", "#3ecf8e"];
+31:   const offenders = [];
+32:   const walk = dir => {
+33:     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+34:       const full = path.join(dir, entry.name);
+35:       if (entry.isDirectory()) { walk(full); continue; }
+36:       if (!entry.name.endsWith(".css")) continue;
+37:       const source = fs.readFileSync(full, "utf8");
+38:       // A palette file IS the palette, and so is the terminal-surface block:
+39:       // the terminal keeps its own ink because it keeps its own theme. What
+40:       // this forbids is a COMPONENT rule naming a colour a theme cannot move.
+41:       if (entry.name === "tokens-bridge.css" || entry.name === "tokens.css") continue;
+42:       const withoutTerminalPalette = source.replace(/--mc-term-[a-z]+: #[0-9a-f]{3,8};/gi, "");
+43:       for (const literal of banned) {
+44:         if (new RegExp(literal, "i").test(withoutTerminalPalette)) offenders.push(`${entry.name}: ${literal}`);
+45:       }
+46:     }
+47:   };
+48:   walk(rendererRoot);
+49:   assert.deepEqual(offenders, [], `status roles must read a token, not a palette entry:\n${offenders.join("\n")}`);
+50: });
+51: 
+52: test("T137 - the Solar palette carries the measured values, not the pretty ones", () => {
+53:   const tokens = read("redesign", "tokens-bridge.css");
+54:   const solar = tokens.slice(tokens.indexOf(".theme-solar {"), tokens.indexOf(".theme-contrast {"));
+55: 
+56:   // Each was solved as the lightest tone still clearing 4.5:1 against every
+57:   // Solar surface it lands on. `--mc-text-dim` at #626c7a measured 4.45 -
+58:   // readable-looking, and failing on 45 elements.
+59:   assert.match(solar, /--mc-text-dim: #59626f;/);
+60:   assert.match(solar, /--mc-ok: #026733;/);
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

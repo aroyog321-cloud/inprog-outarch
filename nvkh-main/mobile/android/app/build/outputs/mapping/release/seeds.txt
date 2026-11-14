@@ -1,0 +1,2 @@
+dev.missioncontrol.companion.MainActivity
+dev.missioncontrol.companion.MainActivity: MainActivity()

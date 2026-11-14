@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app"
+    name=":app"
+    type="APP"
+    maven="OutarchCompanion:app:unspecified"
+    agpVersion="8.13.0"
+    buildFolder="build"
+    bootClassPath="C:\Users\Satish kumar\AppData\Local\Android\Sdk\platforms\android-36\android.jar;C:\Users\Satish kumar\AppData\Local\Android\Sdk\build-tools\35.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-36">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

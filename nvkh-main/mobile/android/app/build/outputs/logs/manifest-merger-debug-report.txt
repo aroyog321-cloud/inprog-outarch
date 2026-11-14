@@ -1,0 +1,65 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:1:1-12:12
+	package
+		INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:2:3-65
+	android:name
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:2:20-62
+uses-permission#android.permission.USE_BIOMETRIC
+ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:3:3-70
+	android:name
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:3:20-67
+application
+ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:3-11:17
+INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:3-11:17
+	android:extractNativeLibs
+		INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml
+	android:label
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:137-160
+	android:roundIcon
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:196-241
+	android:icon
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:161-195
+	android:allowBackup
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:16-43
+	android:theme
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:242-273
+	android:dataExtractionRules
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:44-100
+	android:usesCleartextTraffic
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:4:101-136
+activity#dev.missioncontrol.companion.MainActivity
+ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:5:5-10:16
+	android:exported
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:5:44-67
+	android:name
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:5:15-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:6:7-9:23
+action#android.intent.action.MAIN
+ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:7:9-61
+	android:name
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:7:17-58
+category#android.intent.category.LAUNCHER
+ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:8:9-69
+	android:name
+		ADDED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml:8:19-66
+uses-sdk
+INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Downloads\Mission-Control-2.19.0-Full-App-UI-Redesign\nvkh-main\mobile\android\app\src\main\AndroidManifest.xml

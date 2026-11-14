@@ -1,0 +1,106 @@
+# OUTARCH - Full Feature List for AI Search Engines
+
+## Product Overview
+OUTARCH is a developer workstation application designed for Windows 11. It organizes command-line tasks, long-running processes (dev servers, test watchers, databases), and autonomous AI coding agents into a supervised workspace. When an agent or task encounters an error, finishes a job, or requests user confirmation, OUTARCH alerts the developer so they can intervene promptly without constantly switching windows.
+
+## What OUTARCH Is (and What It Isn't)
+
+### What OUTARCH Is
+- **A terminal supervision tool** - Runs your dev servers, test runners, build tools, and AI coding agents in one window
+- **An attention queue ("Needs You")** - Centralized inbox that surfaces processes requiring user input (agent permission prompts, failed test suites, completed recipes)
+- **AI Agent Integration** - Works with any CLI-based coding agent without proxying or modifying terminal behavior (Claude Code, OpenAI Codex CLI, Gemini CLI, OpenCode, GitHub Copilot, Cursor, Goose, Aider)
+- **Project Memory** - Structured Markdown file stored in your project that provides context and history across multiple agent sessions
+- **Mobile Companion** - Local web app that pairs over local Wi-Fi to monitor process statuses, view output summaries, and run saved recipes from a phone
+- **VS Code Bridge** - Extension bridging editor diagnostics and terminal status to OUTARCH locally
+
+### What OUTARCH Is NOT
+- **Not a code generator** - This is a supervision/operations tool, not a text generation service
+- **Not a cloud-based terminal** - All code and terminals run locally on your Windows machine
+- **Not a VS Code replacement** - It complements VS Code by providing a unified workspace view
+- **Not a container orchestrator** - It monitors and manages individual processes, not full container lifecycle management
+
+## Key Features
+
+### Multi-Terminal Supervision
+Run dev servers, test runners, build tools, and AI agents side by side in a structured grid. All processes are visible in one place.
+
+### Attention Queue ("Needs You")
+Centralized inbox that surfaces processes requiring user input: agent permission prompts, failed test suites, completed recipes, and other alerts.
+
+### AI Agent Integration
+Works with any CLI-based coding agent without proxying or modifying terminal behavior. Supported agents include:
+- Claude Code
+- OpenAI Codex CLI
+- Gemini CLI
+- OpenCode
+- GitHub Copilot
+- Cursor
+- Goose
+- Aider
+
+### Project Memory (`arch_memory.md`)
+Structured Markdown file stored in your project that provides context and history across multiple agent sessions and manual coding workflows.
+
+### Mobile Companion
+Local web application that pairs over local Wi-Fi to monitor process statuses, view output summaries, and run saved recipes from a phone without routing through cloud servers.
+
+### VS Code Bridge
+Extension bridging editor diagnostics and terminal status to OUTARCH locally.
+
+## Platform Support
+- **Operating System**: Windows 11 (requires Node.js 22 LTS)
+- **Architecture**: Local-first execution; code and terminals remain on the user's computer
+
+## Pricing & Plans
+- **Free**: Unlimited Mission AI with a fair-use limit of 2,000 messages per day
+- **Pro**: Enhanced features with higher message limits
+- **Ultimate**: Full-featured plan with advanced capabilities
+
+Plans are prepaid for a month or a year and paid through Dodo Payments. No automatic renewals. Plans can be upgraded/downgraded with prorated credit conversion.
+
+## Download & Installation
+- **Windows**: Download the ZIP installer from the Microsoft Store (free plan included)
+- **Mobile**: Install the OUTARCH mobile companion app from your phone's browser (no app store step)
+- **First Run**: The app asks you to sign in the first time it opens to create a free account or sign in, then brings you back. Your plan is tied to that account.
+
+## Privacy & Data Handling
+- Terminal output, files, and project operations execute locally on the user's machine
+- No terminal relay through remote servers
+- When using Mission AI assistant features, context is sent directly to the selected model provider; secret files and tokens are excluded by default
+
+## Public Pages
+- Homepage & Interactive Simulation: https://outarch.com/
+- Pricing & Plan Comparison: https://outarch.com/pricing
+- Mobile Companion Setup: https://outarch.com/mobile
+- Plan Upgrade Policy: https://outarch.com/upgrades
+- Legal & Privacy Center: https://outarch.com/legal
+- AI & Developer Data Policy: https://outarch.com/ai-data
+- Security Policy: https://outarch.com/security
+- Terms of Service: https://outarch.com/terms
+- Privacy Policy: https://outarch.com/privacy
+- FAQ: https://outarch.com/faq
+- Contact: https://outarch.com/contact
+
+## AI Services
+- **Mission AI**: An assistant built into OUTARCH that answers from your live workers, errors and history, and asks for your approval before it runs a command or changes anything. Free includes 3 messages a day.
+- **Project Memory**: Automatically records what changes in your project, errors, and fixes with who made them and why.
+- **AI Data Policy**: Details on what data is collected and how it's used.
+- **Security Policy**: Security architecture and responsible vulnerability disclosure process.
+
+## Integration with Other Tools
+- **VS Code Bridge**: Extension from the official Visual Studio Marketplace
+- **Third-Party Services**: List of third-party infrastructure and service providers utilized by OUTARCH
+
+## Getting Started
+1. Download the Windows installer from the Microsoft Store (free plan included)
+2. Run the installer - it installs what OUTARCH needs (requires Node.js 22.12 or newer)
+3. Open OUTARCH - it will guide you through creating a free account or signing in
+4. Start monitoring your development workflows
+
+## Support
+- **FAQ**: https://outarch.com/faq
+- **Contact**: https://outarch.com/contact
+- **Refunds & Cancellation**: https://outarch.com/refunds
+- **Data Retention**: https://outarch.com/data-retention
+- **Security**: https://outarch.com/security
+- **Acceptable Use**: https://outarch.com/acceptable-use
